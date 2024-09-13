@@ -1,0 +1,303 @@
+.web-canvas {
+  z-index: 999;
+  position: relative;
+}
+
+body {
+  z-index: -1;
+  position: relative;
+}
+
+/* Banner Home */
+.section-banner-home {
+  /* background-color: var(--color-main); */
+  /* background-color: black; */
+  background: url('/img/wayang-potehi-bg-banner-1.jpeg') rgba(0, 0, 0, 0.3);
+  /* height: 65vh; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+.section-banner-home .container {
+  height: 65vh;
+  align-content: center;
+  color: var(--color-white);
+  gap: 30px;
+}
+
+.section-banner-home .banner-title {
+  font-size: 96px;
+}
+
+.section-banner-home .banner-subtitle {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.section-banner-home .btn-scroll img {
+  height: 50px;
+  width: auto;
+}
+
+.section-banner-home .btn-scroll .icon-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  right: 50%;
+  margin: 0 auto;
+}
+
+/* End of Banner Home */
+
+/* Section News */
+.section-news .container {
+  padding: 80px 0px;
+}
+
+.section-news .section-title {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.section-news .post-row-wrapper {
+  /* grid-template-columns: repeat(auto-fill, 450px); */
+  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+.section-news .post-card-wrapper {
+  border-radius: 10px;
+  background: white;
+  box-shadow: 20px 20px 60px #d9d9d9,
+    -20px -20px 60px #ffffff;
+  overflow: hidden;
+}
+
+.section-news .post-content-wrapper {
+  padding: 20px;
+}
+
+.section-news .post-content-wrapper .post-image img {
+  height: 100%;
+}
+
+.section-news .post-content-wrapper .post-title {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.section-news .post-content-wrapper .post-date {
+  font-size: 15px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+/* End of Section News */
+
+/* Section Upcoming */
+.section-upcoming .container {
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.section-upcoming .section-title {
+  padding-bottom: 80px;
+}
+
+.section-upcoming .content-wrapper {
+  grid-template-columns: repeat(3, 400px);
+  padding-bottom: 80px;
+  justify-content: space-around;
+}
+
+.section-upcoming .content-item {
+  background: #00000033;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+
+.section-upcoming .content-item .content-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.section-upcoming .content-item .content-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.section-upcoming .content-item .content-image img {
+  object-fit: contain;
+}
+
+/* End of Section Upcoming */
+
+/* Section Sejarah */
+.section-sejarah {
+  /* background: ; */
+  background-image: linear-gradient(to right top, #00000088, #00000088, #00000088, #00000088, #00000088), url("/img/bg-sejarah-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: var(--color-white);
+}
+
+.section-sejarah .container {
+  padding: 80px 0px;
+  grid-template-columns: 650px max-content;
+  justify-content: space-between;
+}
+
+.section-sejarah .section-title {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.section-sejarah .section-content {
+  line-height: 1.7em;
+}
+
+.section-sejarah .col-right .image-wrapper {
+  width: 200px;
+}
+
+/* End of Section Sejarah */
+
+/* Section Hubungi */
+.section-hubungi {
+  background: #DF080F;
+  background: linear-gradient(90deg, #fff 50%, #DF080F 50%);
+}
+
+.section-hubungi .container {
+  grid-template-columns: 50% 50%;
+  padding: 80px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.section-hubungi .col-left .image-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.section-hubungi .col-left .btn-hubungi-wrapper {
+  padding-top: 40px;
+}
+
+.section-hubungi .col-right {
+  color: var(--color-white);
+}
+
+.section-hubungi .section-content {
+  width: 445px;
+  margin: 0 auto;
+}
+
+/* End of Section Hubungi */
+
+@media screen and (max-width: 980px) {
+  .section-news .container {
+    padding: 50px 0px;
+  }
+
+  .section-news .section-title {
+    padding-bottom: 30px;
+  }
+
+  .section-news .post-row-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .section-news .post-image {
+    height: 100px;
+  }
+
+  .section-news .post-content-wrapper {
+    padding: 10px;
+  }
+
+  .section-news .post-content-wrapper .post-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .section-news .post-content-wrapper .post-short {
+    font-size: 16px;
+  }
+
+  .section-news .post-content-wrapper .post-date {
+    padding-top: 10px;
+  }
+
+  /* Section Sejarah */
+  .section-sejarah .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .section-sejarah .col-right .image-wrapper {
+    width: 150px;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  /* End of Section Sejarah */
+
+  /* Section Hubungi */
+  .section-hubungi {
+    /* background: linear-gradient(180deg, #fff 50%, #DF080F 50%); */
+    background: var(--color-white);
+  }
+
+  .section-hubungi .container {
+    grid-template-columns: 1fr;
+    padding: 50px 0px !important;
+    gap: 60px;
+  }
+
+  .section-hubungi .col-left .image-wrapper {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+  }
+
+  .section-hubungi .section-content {
+    width: 100%;
+  }
+
+  .section-hubungi .section-title {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .section-hubungi .col-left .btn-hubungi-wrapper {
+    padding-top: 40px;
+  }
+
+  .section-hubungi .col-right {
+    color: var(--color-black);
+  }
+
+  /* End of Section Hubungi */
+
+}

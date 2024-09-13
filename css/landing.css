@@ -1,0 +1,74 @@
+.landing-header .image-wrapper {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.landing-header .header-wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0px;
+  /* background: rgba(249, 249, 250, 0.05);
+  background-color: rgba(249, 249, 250, 0.05);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: 1px solid rgba(175, 175, 175, 0.5); */
+  z-index: 99;
+}
+
+.landing-header .brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-landing {
+  /* background: green; */
+  margin-top: -200px;
+  padding-top: 200px;
+  background-image: url('/img/landing-image.jpeg');
+  height: 100vh;
+  z-index: -1;
+}
+
+.section-landing .overlay-bg {
+  background: #ffffff63;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  top: 0;
+}
+
+.section-landing .container {
+  position: relative;
+  z-index: 10;
+  padding-top: 0px;
+}
+
+.section-landing .row-box-card {
+  padding-top: 50px;
+  gap: 20px;
+}
+
+.section-landing .row-box-card .card-location {
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: max-content 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: #ec262642;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s linear;
+}
+
+.section-landing .row-box-card .card-location:hover {
+  background-color: #ec26268a;
+  transition: all 0.3s linear;
+}
