@@ -12,7 +12,7 @@ body {
 .section-banner-home {
   /* background-color: var(--color-main); */
   /* background-color: black; */
-  background: url('/img/wayang-potehi-bg-banner-1.jpeg') rgba(0, 0, 0, 0.3);
+  background: url('img/wayang-potehi-bg-banner-1.jpeg') rgba(0, 0, 0, 0.3);
   /* height: 65vh; */
   background-attachment: fixed;
   background-repeat: no-repeat;
