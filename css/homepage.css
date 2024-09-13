@@ -12,7 +12,7 @@ body {
 .section-banner-home {
   /* background-color: var(--color-main); */
   /* background-color: black; */
-  background: url('img/wayang-potehi-bg-banner-1.jpeg') rgba(0, 0, 0, 0.3);
+  background: url('/wayang-potehi/img/wayang-potehi-bg-banner-1.jpeg') rgba(0, 0, 0, 0.3);
   /* height: 65vh; */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ body {
 /* Section Sejarah */
 .section-sejarah {
   /* background: ; */
-  background-image: linear-gradient(to right top, #00000088, #00000088, #00000088, #00000088, #00000088), url("/img/bg-sejarah-2.jpeg");
+  background-image: linear-gradient(to right top, #00000088, #00000088, #00000088, #00000088, #00000088), url("/wayang-potehi/img/bg-sejarah-2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
